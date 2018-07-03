@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500,700');
+* {
+	box-sizing: border-box;
+}
+
 body {
 	padding: 0;
 	margin: 0;
 }
 
-* {
-	box-sizing: border-box;
-}
 
 .img-header-responsivo-frame{
 	display: none;
@@ -18,6 +20,7 @@ body {
 }
 
 .menu{
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -28,19 +31,18 @@ body {
 	top: 3.5em;
 }
 
-				@media (max-width: 620px) {
-					.menu{
-						justify-content: center;
-						align-items: center;
-						display: flex;
-						top: 2em;
-					}
-
+@media (max-width: 620px) {
+	.menu{
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		top: 2em;
+	}
 }
 
 .menu-list{
 	display: flex;
-	position: fixed;
+	/*position: fixed;*/
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -53,14 +55,14 @@ body {
 	font-weight: bold;
 }
 
-					@media (max-width: 620px) {
-						.menu-list-item{
-							margin: 5px;
-							font-size: 15px;
-							letter-spacing: 0.1em;
-							font-weight: bold;
-						}
-					}
+@media (max-width: 620px) {
+	.menu-list-item{
+		margin: 5px;
+		font-size: 15px;
+		letter-spacing: 0.1em;
+		font-weight: bold;
+	}
+}
 
 .header-home {
 	display: flex;
@@ -69,24 +71,24 @@ body {
 	flex-direction: column;
 }
 
-					@media (max-width: 620px) {
-						.header-home{
-							background: url('Assets/Abaete-Frame-Mobile.svg') no-repeat center center;
-							background-size: 100% 100%; 
-							height: 100vh;
-						}
-					}
+@media (max-width: 620px) {
+	.header-home{
+		background: url('Assets/Abaete-Frame-Mobile.svg') no-repeat center center;
+		background-size: 100% 100%; 
+		height: 100vh;
+	}
+}
 
 .img-header-logo {
 	margin-top: -2em;
 	max-width: 60%;
 }
 
-					@media (max-width: 620px) {
-						.img-header-logo{
-							max-width: 75%;
-						}
-					}
+@media (max-width: 620px) {
+	.img-header-logo{
+		max-width: 75%;
+	}
+}
 
 .texto-header {
 	margin: 0;
@@ -98,16 +100,16 @@ body {
     font-size: 1.5em;
     height: 76px;
     letter-spacing: 0.05em;
-    font-family: "azo-sans-web",sans-serif;
+	font-family: "azo-sans-web",sans-serif;
 
- }
+}
 
-					@media (max-width: 620px) {
-						.texto-header{
-					    	width: 70%;
-							font-size: 1.05em;
-						}
-					}
+@media (max-width: 620px) {
+	.texto-header{
+    	width: 70%;
+		font-size: 1.05em;
+	}
+}
 
 .sobre-acao{
 	display: flex;
@@ -119,12 +121,12 @@ body {
 	min-height: 100vh;
 }
 
-					@media (max-width: 620px){
-						.sobre-descricao{
-							width: 55%;
-							margin-top: 20%;
-						}
-					}
+@media (max-width: 620px){
+	.sobre-descricao{
+		width: 55%;
+		margin-top: 20%;
+	}
+}
 
 .sobre-descricao{
 	width: 50%;
@@ -133,14 +135,14 @@ body {
     font-family: "azo-sans-web",sans-serif;
 }
 
-					@media (max-width: 620px){
-						.sobre-descricao{
-							width: 85%;
-							margin: 0;
-							font-size: 1em;
-							padding: 2em 0;
-						}
-					}
+@media (max-width: 620px){
+	.sobre-descricao{
+		width: 85%;
+		margin: 0;
+		font-size: 1em;
+		padding: 2em 0;
+	}
+}
 
 .acao{
 	display: flex;
@@ -156,12 +158,11 @@ body {
 	min-height: 100vh;
 }
 
-					@media (max-width: 620px) {
-						.acao-slide{
-							margin-top: 20%;
-						}
-					}
-
+@media (max-width: 620px) {
+	.acao-slide{
+		margin-top: 20%;
+	}
+}
 
 .acao-slide img{
 	align-items: flex-end;
@@ -176,11 +177,11 @@ body {
 	margin: 7em auto 1em;
 }
 
-					@media (max-width: 620px) {
-						.acao-titulo{
-							width: 80%;
-						}
-					}
+@media (max-width: 620px) {
+	.acao-titulo{
+		width: 80%;
+	}
+}
 
 .acao-descricao{
 	font-family: "azo-sans-web",sans-serif;
@@ -192,11 +193,11 @@ body {
 	margin: 0 auto 1em;
 }
 
-					@media (max-width: 620px) {
-						.acao-descricao{
-							width: 80%;
-						}
-					}
+@media (max-width: 620px) {
+	.acao-descricao{
+		width: 80%;
+	}
+}
 
 .acao-img{
 	display: flex;
@@ -205,12 +206,11 @@ body {
 	width: 65%;
 	margin: 0 auto 2em;
 }
-
-					@media (max-width: 620px) {
-						.acao-img{
-							width: 80%;
-						}
-					}
+@media (max-width: 620px) {
+	.acao-img{
+		width: 80%;
+	}
+}
 
 .Abaete_Seta_direita, .Abaete_Seta_esquerda {
 	position: absolute;
@@ -221,17 +221,17 @@ body {
 
 
 .footer-fim{
+	position: relative;
 	background: url('Assets/Abaete-Frame-Desktop-Contato.svg') no-repeat center center;
 	background-size: 100% 100%; 
 	height: 100vh;	
 }
 
-
-					@media (max-width: 620px) {
-						.footer-fim{
-							background-size: 0;
-						}
-					}
+@media (max-width: 620px) {
+	.footer-fim{
+		background-size: 0;
+	}
+}
 
 .contato{
 	display: flex;
@@ -251,12 +251,12 @@ body {
 	font-family: "azo-sans-uber",sans-serif;
 }
 
-					@media (max-width: 620px) {
-						.contato-informacao{
-							font-size: 1.05em;
-							width: 90%;
-						}
-					}
+@media (max-width: 620px) {
+	.contato-informacao{
+		font-size: 1.05em;
+		width: 90%;
+	}
+}
 
 .icone{
 	width:  100%;
@@ -273,8 +273,38 @@ body {
 	margin: 1em;
 }
 
-				@media (max-width: 620px) {
-					.icone{
-						padding: 0;
-					}
-				}
+@media (max-width: 620px) {
+	.icone{
+		padding: 0;
+	}
+}
+
+/*footer Vai na Web */
+.vnw{ 
+	width: 100%;
+	max-width: 100%;
+    height: 40px;
+	background: #f16337;
+	position: absolute;
+	left: 0;
+	bottom:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.vnw__text{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	font-size: 16px;
+    color: #30368c;
+}
+.vnw__link{
+	font-weight: 700;
+    color: #30368c;
+}
+@media (max-width: 768px){
+	.vnw__text{
+        font-size: 14px;
+    }
+}
